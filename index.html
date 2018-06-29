@@ -3,68 +3,90 @@
 
 <head>
     <title>The Scruad</title>
+<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin Dark' rel='stylesheet'>
 </head>
 
 <style>
     h2 {
-        font-family: "Verdana";
+        font-family: "Abril Fatface;
     }    
     
     p {
-        font-family: "Verdana";
+        font-family: "Palanquin Dark";
     }
     
     h1 {
-        font-family: "Trebuchet MS";
+        font-family: 'Abril Fatface';
     }
     
     body {
-        background-color: #585858;
+        background-color: #;
+        margin: 0;
     }
     
     ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #f1f1f1;
     overflow: hidden;
-    background-color: #333;
+    position: sticky;
+    top: 0;
 }
+
     li {
-    display: inline;
-    float: left;
+        float:left;
+    }
+    
+li a {
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration:: none;
-    }
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+li a.active {
+    background-color: grey;
+    color: white;
+}    
     
-    li a:hover {
-        background-color: #111;
-    }
-    
-    .active {
-        background-color: #4CAF50
-    }
-    
-</style>
+.header {
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+    background: #b30007; /* green background */
+    color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 40px;
+}    
+    </style>
     
  <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="theteam.html">The Team</a></li>
   <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul> 
 
+  </ul>  
+<div class="header">
+
+    <img src="https://cdn.discordapp.com/attachments/287048279399727104/462379527901937664/Scruad.png">
+    </div>
+    
 <body>
-    <center><h1>The Scruad</h1></center>
+    <div style="margin-left:15%;padding:1px 16px;height:1000px;">
     <h2>Gaming</h3>
     <p> The Scruad is a professional eSports team who primarily plays games such as ROBLOX, Lego Island, Club Penguin Rewritten, and Run 2 at the competitive level.</p>
     
     <h2>The Team</h4>
-    <p> <img src="https://cdn.discordapp.com/attachments/347868602822688769/462084604967518208/unknown.pngfdsaafdsadsfafsd.png" width=5%> Jonah Baklava: Jonah Adrian Baca is a professional CBR player who played the original Club Penguin at the ripe age of 10. Jonah is a black belt in Cardjitzu and has defeated the Sensei at least 20 times, some calling him <br>"Sensei Jonah" himself.</p>
+    <p> <img src="https://cdn.discordapp.com/attachments/347868602822688769/462084604967518208/unknown.pngfdsaafdsadsfafsd.png" width=5%> Jonah Baklava: Jonah Adrian Baca is a professional CBR player who played the original Club Penguin at the ripe age of 10. Jonah is a black belt in Cardjitzu and has defeated the Sensei at least 20 times, some calling him "Sensei Jonah" himself.</p>
     
     <p> <img src="https://cdn.discordapp.com/attachments/241728412853469184/462120987807449099/unknown.png" width=5%> Evan Ghirardelli: At a young age, Evan Guacamole survived the Holocaust. Now, he enjoys killing Nazis virtually on Coolmath.</p>
     
@@ -72,7 +94,8 @@
         
     <p> <img src="https://cdn.discordapp.com/attachments/241728412853469184/462126104526716928/unknown.png" width=5%> Antonio Crayfish: Tony Garcia started his career at the age of 11, along with co-stars Jacoob Vids and Jonah Baker, in the series Minecraft School. He starred in all three series' and was casted for the fourth, <br>but unfortunately the show was cancelled.. </p>    
     
-    <p> <img src="https://image.prntscr.com/image/uTXd74_3SSSgjeE15mksXg.png" width=5%> Lucca Tortellini: Lusa Shkreli began his gaming life with the alias "TheShadowlessOne" on the game Town of Salem. He eventually moved on to having debates with Minecraft kids on how Skyrim is greatly superior. <br>Since then, he's evolved and is now an alpha fuckmale.</p>
+    <p> <img src="https://image.prntscr.com/image/uTXd74_3SSSgjeE15mksXg.png" width=5%> Lucca Tortellini: Lusa Shkreli began his gaming life with the alias "TheShadowlessOne" on the game Town of Salem. He eventually moved on to having debates with Minecraft kids on how Skyrim is greatly superior. Since then, he's evolved and is now an alpha fuckmale.</p>
+</div>        
     
 </body>
 
