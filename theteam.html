@@ -1,97 +1,97 @@
 <!DOCTYPE=html>
-<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Palanquin Dark' rel='stylesheet'>
-
-<style>
-    h2 {
-        font-family: "Abril Fatface;
-    }    
-    
-    p {
-        font-family: "Palanquin Dark";
-    }
-    
-    h1 {
-        font-family: 'Abril Fatface';
-    }
-    
-    body {
-        background-color: #;
-        margin: 0;
-    }    
-    
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-}
-
-    li {
-        float:left;
-    }
-    
-li a {
-    display: block;
-    color: #000;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-li a:hover {
-    background-color: #555;
-    color: white;
-}
-li a.active {
-    background-color: grey;
-    color: white;
-}    
-.header {
-    padding: 80px; /* some padding */
-    text-align: center; /* center the text */
-    background: #b30007; /* green background */
-    color: white; /* white text color */
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-    font-size: 40px;
-}    
-    </style>    
-
-
-</style>
+<link rel="stylesheet" href="index.css">
 <html>
+    
+<div class="navbar">
  <ul>
   <li><a href="index.html">Home</a></li>
   <li><a class=active href="theteam.html">The Team</a></li>
   <li><a href="contact.asp">Contact</a></li>
+  <li><a href="https://www.youtube.com/channel/UCrC8TvEGzSr_jRGqDBlJQkA">YouTube</a></li> 
 
   </ul>  
+    </div>
+    
     <div class="header">
 
     <img src="https://cdn.discordapp.com/attachments/287048279399727104/462379527901937664/Scruad.png">
     </div>
     
     
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="https://cdn.discordapp.com/attachments/347868602822688769/462084604967518208/unknown.pngfdsaafdsadsfafsd.png" style="width:100%">
+    <div class="text">Jonah Baklava: Jonah Adrian Baca is a professional CBR player who played the original Club Penguin at the ripe age of 10. Jonah is a black belt in Cardjitzu and has defeated the Sensei at least 20 times, some calling him "Sensei Jonah" himself.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="https://cdn.discordapp.com/attachments/241728412853469184/462120987807449099/unknown.png" style="width:100%">
+    <div class="text">Evan Ghirardelli: At a young age, Evan Guacamole survived the Holocaust. Now, he enjoys killing Nazis virtually on Coolmath.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="https://cdn.discordapp.com/attachments/241728412853469184/462126104526716928/unknown.png" style="width:100%">
+    <div class="text">Antonio Crayfish: Tony Garcia started his career at the age of 11, along with co-stars Jacoob Vids and Jonah Baker, in the series Minecraft School. He starred in all three series' and was casted for the fourth, <br>but unfortunately the show was cancelled..</div>
+  </div>
+     <div class="mySlides fade">
+    <div class="numbertext">4/4</div>
+    <img src="https://image.prntscr.com/image/uTXd74_3SSSgjeE15mksXg.png" style="width:100%">
+    <div class="text">Lucca Tortellini: Lusa Shkreli began his gaming life with the alias "TheShadowlessOne" on the game Town of Salem. He eventually moved on to having debates with Minecraft kids on how Skyrim is greatly superior. Since then, he's evolved and is now an alpha fuckmale.</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>     
+</div>
     
-<body>
-    <div style="margin-left:15%;padding:1px 16px;height:1000px;">
-    <h2>The Team</h4>
-    <p> <img src="https://cdn.discordapp.com/attachments/347868602822688769/462084604967518208/unknown.pngfdsaafdsadsfafsd.png" width=5%> Jonah Baklava: Jonah Adrian Baca is a professional CBR player who played the original Club Penguin at the ripe age of 10. Jonah is a black belt in Cardjitzu and has defeated the Sensei at least 20 times, some calling him "Sensei Jonah" himself.</p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}    
     
-    <p> <img src="https://cdn.discordapp.com/attachments/241728412853469184/462120987807449099/unknown.png" width=5%> Evan Ghirardelli: At a young age, Evan Guacamole survived the Holocaust. Now, he enjoys killing Nazis virtually on Coolmath.</p>
-    
-    <p> <img src="https://cdn.discordapp.com/attachments/241728412853469184/462122466790211615/unknown.png" width=5%> Kevin Ketchum: After being liberated by Dr. Jones in the Temple of Doom, Kevin Kowabunga was unfortunately sent west of the Mississippi River during Andrew Jackson's Presidency. <br>He now resides in California and speedruns Run 3 in his freetime.</p>    
-        
-    <p> <img src="https://cdn.discordapp.com/attachments/241728412853469184/462126104526716928/unknown.png" width=5%> Antonio Crayfish: Tony Garcia started his career at the age of 11, along with co-stars Jacoob Vids and Jonah Baker, in the series Minecraft School. He starred in all three series' and was casted for the fourth, <br>but unfortunately the show was cancelled.. </p>    
-    
-    <p> <img src="https://image.prntscr.com/image/uTXd74_3SSSgjeE15mksXg.png" width=5%> Lucca Tortellini: Lusa Shkreli began his gaming life with the alias "TheShadowlessOne" on the game Town of Salem. He eventually moved on to having debates with Minecraft kids on how Skyrim is greatly superior. Since then, he's evolved and is now an alpha fuckmale.</p>  
-    
+    </script>
+ 
 </body>
 
 
